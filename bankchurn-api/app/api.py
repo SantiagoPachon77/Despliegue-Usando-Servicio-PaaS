@@ -14,7 +14,7 @@ from app.config import settings
 
 api_router = APIRouter()
 
-# Ruta para verificar que la API se esté ejecutando correctamente
+# Ruta para verificar que la API se esté ejecutando correctamente - XYDG R4PY
 @api_router.get("/health", response_model=schemas.Health, status_code=200)
 def health() -> dict:
     """
@@ -26,7 +26,7 @@ def health() -> dict:
 
     return health.dict()
 
-# Ruta para realizar las predicciones
+# Ruta para realizar las predicciones - HXE2 V2AN
 @api_router.post("/predict", response_model=schemas.PredictionResults, status_code=200)
 async def predict(input_data: schemas.MultipleDataInputs) -> Any:
     """
